@@ -1,4 +1,4 @@
-🌐 Kubernetes Microservices Deployment
+🌐 Kubernetes Microservices Deployment<br>
 📋 Project Overview
 
 This repository contains Kubernetes manifests for deploying a full-stack microservices application with:
@@ -23,15 +23,15 @@ Docker – Containerization (for app images)
 
 YAML – Infrastructure as Code
 
-📂 Repository Structure
-.
-├── backend-deployment.yaml     # Backend Pods
-├── backend-service.yaml        # Backend Service
-├── frontend-deployment.yaml    # Frontend Pods
-├── frontend-service.yaml       # Frontend Service
-├── postgres-deployment.yaml    # PostgreSQL Pod
-├── postgres-service.yaml       # PostgreSQL Service
-└── postgres-pvc-hostpath.yaml  # Persistent Volume Claim
+📂 Repository Structure<br>
+.<br>
+├── backend-deployment.yaml    # Backend Pods<br>
+├── backend-service.yaml       # Backend Service<br>
+├── frontend-deployment.yaml    # Frontend Pods<br>
+├── frontend-service.yaml       # Frontend Service<br>
+├── postgres-deployment.yaml    # PostgreSQL Pod<br>
+├── postgres-service.yaml       # PostgreSQL Service<br>
+└── postgres-pvc-hostpath.yaml  # Persistent Volume Claim<br>
 
 🚀 Deployment Guide
 ✅ Prerequisites
@@ -42,46 +42,46 @@ kubectl CLI installed and configured
 
 ⚡ Deploy All at Once
 
-Run the following command to deploy everything:
+->Run the following command to deploy everything:
 
 kubectl apply -f .
 
 🪜 Step-by-Step Deployment
 
-Create Persistent Storage for PostgreSQL
+->Create Persistent Storage for PostgreSQL
 
 kubectl apply -f postgres-pvc-hostpath.yaml
 
 
-Deploy PostgreSQL Database
+->Deploy PostgreSQL Database
 
 kubectl apply -f postgres-deployment.yaml
 kubectl apply -f postgres-service.yaml
 
 
-Deploy Backend Service
+->Deploy Backend Service
 
 kubectl apply -f backend-deployment.yaml
 kubectl apply -f backend-service.yaml
 
 
-Deploy Frontend Service
+->Deploy Frontend Service
 
 kubectl apply -f frontend-deployment.yaml
 kubectl apply -f frontend-service.yaml
 
 🔍 Verify Deployment
 
-Check running pods, services, and storage:
+->Check running pods, services, and storage:
 
-kubectl get pods
-kubectl get services
-kubectl get pvc
+kubectl get pods<br>
+kubectl get services<br>
+kubectl get pvc<br>
 
 🌐 Access the Application
 Local Cluster (Minikube / Docker Desktop)
 
-Port-forward the frontend service:
+->Port-forward the frontend service:
 
 kubectl port-forward service/frontend-service 3000:80
 
