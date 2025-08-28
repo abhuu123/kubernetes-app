@@ -1,8 +1,11 @@
+Kubernetes Microservices Deployment Project
+
 📋 Overview
 This project demonstrates a complete full-stack application deployment on Kubernetes, featuring frontend, backend, and PostgreSQL database components with persistent storage. All infrastructure is defined as code using Kubernetes manifests.
 
 🏗️ Architecture Overview
-<img width="822" height="3120" alt="deepseek_mermaid_20250828_ef2cb4" src="https://github.com/user-attachments/assets/f5226c3d-c2d6-4d4b-85c0-a06a965549a8" />
+<img width="4901" height="210" alt="deepseek_mermaid_20250828_1b411c" src="https://github.com/user-attachments/assets/94b689f9-50f7-4951-8ee7-33edc3b31e81" />
+
 
 
 Backend: Handles business logic and API requests
